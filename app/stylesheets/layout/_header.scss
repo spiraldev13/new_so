@@ -1,0 +1,154 @@
+.header_wrap_nav{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+
+.section1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_content{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -5%;
+}
+
+.section1_img{
+  width: 70%;
+  margin: 0 auto;
+}
+
+////////////////////////////////////////////////////////////////
+// Section_2
+////////////////////////////////////////////////////////////////
+.section_2{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 30;
+  background-color: $color_yellow;
+}
+
+.test{
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.d-blockline{
+  display: block;
+  width: 25%;
+}
+
+
+// .back{
+//   height: 100vh;
+//   background-color: $color_yellow;
+//   position: relative;
+//   z-index: 40;
+// }
+
+////////////////////////////////////////////////////////////////
+// Section_3
+////////////////////////////////////////////////////////////////
+
+.section_3{
+  background-color: $color_blue;
+  height: 100vh;
+
+}
+
+.section_3_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_blue;
+  @include breakpoint(tablet){
+    height: calc(100% - 10em);
+  }
+}
+
+.wrap_content_text{
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+}
+
+.style_bar{
+  box-sizing: content-box;
+  position: relative;
+  background-color: $color_white;
+  width: 55vw;
+  height: 6em;
+  margin-left: -1em;
+  border-width: medium;
+  transform: rotateZ(-4deg) translateY(-30%);
+    @include breakpoint(tablet){
+      height: 9em;
+      @include breakpoint(laptop){
+        height: 10em;
+          @include breakpoint(desktopF){
+            height: 11em;
+        }
+      }
+    }
+  }
+
+
+.title_bar{
+  color: $color_yellow;
+  float: right;
+  font-size: 1.2em;
+  margin-top: 60px;
+  margin-right: 9px;
+  @include breakpoint(tablet){
+    margin-top: 90px;
+    font-size: 2em;
+    margin-right: 15px;
+    @include breakpoint(laptop){
+      margin-top: 110px;
+      margin-right: 20px;
+      @include breakpoint(desktopF){
+        margin-top: 130px;
+      }
+    }
+  }
+}
+
+
+.content_text{
+
+  width: 50%;
+  // color: $color_blue;
+  color: $color_white;
+}
+
+.content_text img{
+  width: 5em;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+.content_text h3{
+  font-size: 1em;
+  padding: 0em 1em 1em 1em;
+  text-align: center;
+}
+
+.content_text p{
+  width: 100%;
+  padding: 0em 1em 1em 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
